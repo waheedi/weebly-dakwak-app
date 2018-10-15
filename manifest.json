@@ -1,0 +1,23 @@
+{
+  "manifest": "1",
+  "version": "1.5.0",
+  "locale": {
+    "default": "en-us",
+    "supported": [
+      "en-us"
+    ]
+  },
+  "callback_url": "https://app.dakwak.com/api/weebly/index",
+  "manage_app_url": "https://app.dakwak.com/register",
+  "oauth_final_destination": "manage",
+  "webhooks": {
+    "callback_url": "https://app.dakwak.com/weebly/webhooks/callback",
+    "events": [
+      "user.update","site.publish", "site.delete", "app.uninstall"
+    ]
+  },
+  "scopes": [
+    "read:user",
+    "read:site"
+  ]
+}
